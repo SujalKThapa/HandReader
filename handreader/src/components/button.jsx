@@ -1,9 +1,9 @@
 import React from "react";
 
-function SimpleButton(){
+function SimpleButton({text}){
     return(
     <button className="custom-button">
-        Click Me!
+        {text}
     </button>
     );
 }

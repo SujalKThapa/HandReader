@@ -1,0 +1,22 @@
+.dialogBoxInner {
+    width: 100%; /* Full width of the container */
+    height: 25vh; /* Full height of the container */
+    padding: 10px; /* Padding inside the textarea */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    font-size: 16px; /* Font size */
+    resize: both; /* Allows the user to resize the textarea */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+@media (max-width: 768px) {
+    .dialogBoxInner {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .dialogBoxInner {
+        font-size: 12px; /* Even smaller font size for very small screens */
+    }
+}

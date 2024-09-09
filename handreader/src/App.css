@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+body, html {
+  font-family: 'Roboto';
+  font-weight: 600;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,18 +19,55 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: whitesmoke;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+
+.dialogBox {
+  margin: 2.5%;
+  font-size: 1.25rem;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.custom-button {
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  font-family: 'Roboto';
+  padding: 10px 20px; /* Padding for spacing */
+  border: none; /* No border */
+  border-radius: 8px; /* Slightly rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.custom-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.custom-button:active {
+  background-color: #1e7e34; /* Even darker green on click */
+  transform: translateY(0); /* Reset lift on click */
+}
+.dialogBox {
+  margin: 5%;
+  padding: 12px 20px;
+}
+
+.dialogBoxInner {
+  margin: 2.5%;
+  padding: 12px 20px;
 }
 
 @keyframes App-logo-spin {
